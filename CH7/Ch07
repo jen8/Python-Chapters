@@ -1,0 +1,48 @@
+7.14.1 First Exercises
+
+EXERCISE 1
+
+>>> 'Python'[1]  --->  "y"
+>>> "Strings are sequences of characters."[5] ---> "g"
+>>> len("wonderful") ---> 9
+>>> 'Mystery'[:4] ---->  "myst"
+>>> 'p' in 'Pinapple' ---> True
+>>> 'apple' in 'Pinapple' ---> True
+>>> 'pear' in 'Pinapple'----> False
+>>> 'apple' > 'pinapple' ---> False
+>>> 'pinapple' < 'Peach' ---> False
+
+EXERCISE 2
+
+"""
+  fruit = "ramalama"
+  >>> type(string.fruit)
+  <type 'str'>
+  
+  >>> len(fruit)
+  8
+  
+  >>> fruit[:3]
+  'ram'
+"""
+
+
+"""
+  >>> group = "John, Paul, George, and Ringo"
+  >>> group[12:18]
+  'George'
+  >>> group[6:10]
+  'Paul'
+  >>> group[:4]
+  'John'
+  >>> group[5:]
+  'Ringo'
+"""
+
+"""
+  s = "plaontic"
+  >>> len(s)
+  8
+  >>> s[4:6] == 'on'
+  True
+"""

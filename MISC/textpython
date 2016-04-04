@@ -1,0 +1,2 @@
+def recursive_min(nested_num_list):
+    recursive_min([2, 9, [1, 13], 8, 6])
