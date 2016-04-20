@@ -63,34 +63,23 @@ line_num_file()
 
 
 def omit_linenum_file():
-    f = open("linenumberfile.txt", "r")
-    xs = f.readlines()
-    f.close()
-    # read file with numbered lines
-    
-    
-    xs_2 = [ ]
-    n = 1
-    columns = ("{0:05d}".format(n))
-    for line in xs:
-        result = columns + line
-        n +=1
+    infile = open("linenumberfile.txt", "r")
+    outfile = open("omitlinenum.txt", "w")
+    while True:
+        text = infile.readline()
+        if len(text) == 0:
+            break
 
-        line_without_columns = result.replace(columns,"") 
-        xs_2.insert(len(xs), line_without_columns)       
+        # Put any more processing logic here
+        line_minus_num = text[5:]
+        outfile.write(line_minus_num)
+
+    infile.close()
+    outfile.close()
     
-    # take out numbered lines
-    
-    
-    
-    g = open("omitlinenum.txt", "w")
-    for line in xs_2:
-        g.write(line)
-    g.close()
-    # write out new file without line numbers
 
 omit_linenum_file()    
-#call function
+
 
     
 
